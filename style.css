@@ -159,10 +159,29 @@ body {
   border-radius: 10px;
   top: -75px;
 }
+.emailshorten-sect {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+.emailshorten-sect.active{
+  display: flex;
+}
+.shortedem{
+  color: hsla(180, 66%, 49%, 0.705);
+  text-align: center;
+}
 .shortenemail {
   max-width: 80%;
   width: 100%;
   display: inline-block;
+  border: none;
   padding: 0.8rem 1rem;
   border-radius: 10px;
 }
@@ -178,6 +197,9 @@ body {
 .cardheading-secction {
   max-width: 35%;
   margin: 0 auto;
+}
+.cardheading{
+  margin-top: 1.5rem ;
 }
 .cardheading,
 .cardpara {
@@ -241,24 +263,23 @@ body > div > div.card-section > div.cards > div:nth-child(3) {
   color: var(--GrayishViolet);
   text-align: justify;
 }
-.boostsection{
-  background-image: url('/images/bg-boost-desktop.svg');
+.boostsection {
+  background-image: url("/images/bg-boost-desktop.svg");
   background-repeat: no-repeat;
-  background-position:center;
+  background-position: center;
   padding: 2rem;
   max-width: 1280px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin:0 auto;
+  margin: 0 auto;
   background-color: #3a3053;
 }
-.boosth2{
+.boosth2 {
   text-align: center;
   color: white;
 }
-.footer
-{
+.footer {
   max-width: 1280px;
   margin: 0 auto;
   background-color: rgb(44, 44, 44);
@@ -267,30 +288,30 @@ body > div > div.card-section > div.cards > div:nth-child(3) {
   justify-content: space-evenly;
   padding: 2rem;
   align-items: center;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
 }
-.centerfooter{
+.centerfooter {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-.centerfooter h3{
+.centerfooter h3 {
   color: white;
 }
-.centerfooter ul li{
+.centerfooter ul li {
   list-style-type: none;
   color: var(--GrayishViolet);
 }
-.rightfooter i{
+.rightfooter i {
   font-size: 2rem;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.rightfooter i:hover{
+.rightfooter i:hover {
   transform: scale(1.1);
 }
-.rightfooter i + i{
+.rightfooter i + i {
   margin-left: 1rem;
 }
 @media (max-width: 1030px) {
@@ -312,6 +333,12 @@ body > div > div.card-section > div.cards > div:nth-child(3) {
     display: flex;
     flex-direction: column;
     top: -106px;
+  }
+  .emailshorten-sect
+  {
+     display: flex;
+     gap: 1rem;
+    flex-direction: column;
   }
   .shortenemail {
     max-width: 100%;
@@ -338,6 +365,10 @@ body > div > div.card-section > div.cards > div:nth-child(3) {
   .cardheading-secction {
     max-width: 45%;
   }
+  .shortedem{
+    margin-left: 6rem;
+    display: inline-block;
+  }
 }
 
 @media (max-width: 880px) {
@@ -350,6 +381,7 @@ body > div > div.card-section > div.cards > div:nth-child(3) {
   .info {
     color: rgb(48, 48, 48);
   }
+  
 }
 
 @media (max-width: 780px) {
@@ -400,14 +432,18 @@ body > div > div.card-section > div.cards > div:nth-child(3) {
   .cardheading {
     font-size: 1.3rem;
   }
-   body > div > div.card-section > div.cards > div:nth-child(2) {
+  body > div > div.card-section > div.cards > div:nth-child(2) {
     margin-top: 1rem;
   }
   body > div > div.card-section > div.cards > div:nth-child(3) {
     margin-top: 1rem;
   }
+  .shortedem{
+    margin-left: 3rem;
+ 
+  }
 }
-@media (max-width: 430px) {
+@media (max-width: 431px) {
   .heading {
     font-size: 1.2rem;
   }
@@ -417,11 +453,21 @@ body > div > div.card-section > div.cards > div:nth-child(3) {
   .cardheading-secction {
     max-width: 80%;
   }
-  .footer{
+  .footer {
     flex-direction: column;
   }
-  .centerfooter{
+  .centerfooter {
     flex-direction: column;
   }
+  .shortedem{
+    margin-left: 2rem;
  
+  }
+}
+@media (max-width: 400px) {
+ 
+  .shortedem{
+    margin-left: 0rem;
+
+  }
 }
