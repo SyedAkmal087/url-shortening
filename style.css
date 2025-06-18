@@ -74,6 +74,7 @@ body {
   max-width: 200px;
   width: 100%;
   right: 50px;
+  z-index: 999;
   border-radius: 0.5rem;
   background-color: var(--DarkViolet);
   gap: 1rem;
@@ -334,7 +335,7 @@ body > div > div.card-section > div.cards > div:nth-child(3) {
     flex-direction: column;
     top: -106px;
   }
-  .emailshorten-sect
+  .emailshorten-sect.active
   {
      display: flex;
      gap: 1rem;
@@ -424,7 +425,7 @@ body > div > div.card-section > div.cards > div:nth-child(3) {
     line-height: normal;
   }
   .emailshorten-section {
-    max-width: 100%;
+    max-width: 80%;
   }
   .cardheading-secction {
     max-width: 60%;
